@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<header class="jumbotron text-center">
+		<h1>Welcome to CampUtah!</h1>
+		<h2>
+			View the best campgrounds in Utah
+		</h2>
+		<p>
+			Get all the information you need before your next trip into the outdoors
+		</p>
+		<p>
+			<a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New Campground
+			</a>
+		</p>
+	</header>
+
+	<div class="row text-center" id="images">
+		<% campgrounds.forEach((camp) => { %>
+		<div class="col-md-3 col-sm-6">
+			<div class="thumbnail">
+				<img id="index-images" class="img-responsive" src="<%= camp.image %>" />
+				<div class="caption">
+					<h4><%= camp.name %></h4>
+				</div>
+				<p>
+					<a href="/campgrounds/<%= camp._id %>" class="btn btn-sm btn-primary">More Info</a>
+				</p>
+			</div>
+		</div>
+		<% }); %>
+	</div>
+</div>
+
+<% include ../partials/footer %>

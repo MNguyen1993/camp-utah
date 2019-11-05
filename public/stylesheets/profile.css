@@ -1,0 +1,62 @@
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile {
+    width: 500px;
+    height: 600px;
+    background:  #e7e7e7;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile button {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #bdc3c7;
+    transition: 0.5s;
+}
+
+.profile button:hover {
+    background-position: right;
+}
+
+.profile .button-edit {
+    position: absolute;
+    bottom: 25px;  
+    background: linear-gradient(120deg, #8fc3ff, #006eff);
+    background-size: 300%; 
+}
+
+.profile .button-delete {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    background: linear-gradient(120deg, #fd7171, #c50000);
+    background-size: 300%; 
+}
+
+.user-info {
+    padding: 20px;
+    background: #dbdbdb;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.user-info:hover {
+    box-shadow: 5px 5px 5px #3498db;
+}
+
+.user-info input {
+    outline: none;
+}
+

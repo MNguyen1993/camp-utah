@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+<div class="profile">
+	<h1>Your Profile</h1>
+
+	<form action="/users/me?_method=PATCH" method="POST">
+		<div class="user-info">
+			<strong>Name:</strong>
+			<input type="text" name="user[name]" value="<%= user.name %>">
+		</div>
+
+		<div class="user-info">
+			<strong>Username:</strong>
+			<input type="text" name="user[username]" value="<%= user.username %>">
+		</div>
+
+		<div class="user-info">
+			<strong>Email:</strong>
+			<input type="text" name="user[email]" value="<%= user.email %>">
+		</div>
+
+		<button class="button button-edit">Update</button>
+	</form>
+
+	<form action="/users/me?_method=DELETE" method="POST">
+		<button class="button button-delete">Delete Account</button>
+	</form>
+</div>
+
+<% include ../partials/footer %>
